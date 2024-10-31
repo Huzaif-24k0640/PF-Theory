@@ -10,9 +10,9 @@
 int main(){
 
 	int i, j = 0, k, n = 0, l;
-	printf("Slogan: ");
 	char ch[100];
 	int an[j];
+	printf("\n Slogan: ");
 	fgets(ch,100,stdin);
 	int c = strlen(ch);
 	int arr[100][100];
@@ -37,11 +37,11 @@ int main(){
 	}//end for
 	
 	for(k = 0; k < j;k++){
-		printf("For '");
+		printf("\n For (");
 		for(i = 0; i < an[k];i++){
 			printf("%c", arr[k][i]);
 		}//end for
-		printf("': ");
+		printf("): ");
 		printf("{");
 		for(l = 0; l < an[k];l++){
 			int ci = arr[k][l];
